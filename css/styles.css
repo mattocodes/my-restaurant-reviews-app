@@ -290,6 +290,9 @@ nav h1 a {
   color: #666;
 }
 
+a:focus {
+  outline: 4px solid red;
+}
 
 /*Media Queries */
 

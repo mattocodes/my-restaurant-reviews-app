@@ -161,6 +161,11 @@ createRestaurantHTML = (restaurant) => {
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+
+  // set alt atribute for images
+  console.log('content of src ', image.src);
+  addImageAlt(image);
+
   li.append(image);
 
   const name = document.createElement('h1');
@@ -208,4 +213,55 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     self.markers.push(marker);
   });
 } */
+
+/**
+ * Adds descriptions to images
+ */
+addImageAlt = (image) => {
+  switch(image.src) {
+    case 'http://localhost:8000/img/1.jpg':
+        image.alt = "a picture of people at Mission Chinese Food Restaurant";
+        break;
+
+    case 'http://localhost:8000/img/2.jpg':
+        image.alt = "a picture of a pizza on a dish at Emily's Restaurant";
+        break;
+
+    case 'http://localhost:8000/img/3.jpg':
+        image.alt = "showing inside Kang Ho Dong Baekjeong Restaurant";
+        break;
+
+    case 'http://localhost:8000/img/4.jpg':
+        image.alt = "showing outside Katz's Delicatessen";
+        break;
+
+    case 'http://localhost:8000/img/5.jpg':
+        image.alt = "a picture showing inside Roberta's Pizza Restaurant";
+        break;
+
+    case 'http://localhost:8000/img/6.jpg':
+        image.alt = "inside Hometown BBQ Restaurant";
+        break;
+
+    case 'http://localhost:8000/img/7.jpg':
+        image.alt = "showing people outside Superiority Burger Restaurant";
+        break;
+
+    case 'http://localhost:8000/img/8.jpg':
+        image.alt = "showing outside of The Dutch Restaurant";
+        break;
+
+    case 'http://localhost:8000/img/9.jpg':
+        image.alt = "showing people eating at MU Ramen Restaurant";
+        break;
+
+    case 'http://localhost:8000/img/10.jpg':
+        image.alt = "showing the decor inside Casa Enqique Restaurant";
+        break;
+
+    default:
+        image.alt = 'a picture';
+  }
+}
+
 
