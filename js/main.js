@@ -163,7 +163,6 @@ createRestaurantHTML = (restaurant) => {
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
 
   // set alt atribute for images
-  console.log('content of src ', image.src);
   addImageAlt(image);
 
   li.append(image);
