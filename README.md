@@ -9,8 +9,8 @@ The objective of this project was to convert a static web site into a mobile-rea
 2.   To serve up the site files, you're going to need a simple HTTP server; you may use one provided by Python. If you don't have Python installed on your system, you may download the lastest edition of Python from their [website](https://www.python.org).
 
 3.  From the terminal or command prompt, navigate to the root of the unzipped file:
-    a.  For Python 3.x users, type the following at the prompt: `python -m http.server 8000`
-    b.  For Python 2.x users, type the following at the prompt: `python3 -m SimpleHTTPServer 8000`
+    a.  For Python 3.x users, type the following at the prompt: `python3 -m http.server 8000`
+    b.  For Python 2.x users, type the following at the prompt: `python -m SimpleHTTPServer 8000`
 
 4. With the server running, open your Internet browser and type the following to view the site: `http://localhost:8000`
 
