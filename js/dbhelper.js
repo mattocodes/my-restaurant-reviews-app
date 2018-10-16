@@ -186,8 +186,8 @@ class DBHelper {
  if('serviceWorker' in navigator){
    window.addEventListener('load', () => {
      navigator.serviceWorker
-      .register('/js/sw.js')
-      .then(reg => console.log('Service Worker: Registered'))
-      .catch(err => console.log(`Service Worker: Error: ${err}`))
+      .register('/sw.js')
+      .then(reg => console.log('Service Worker is Registered'))
+      .catch(err => console.log(`Service Worker has Error: ${err}`))
    });
  }
